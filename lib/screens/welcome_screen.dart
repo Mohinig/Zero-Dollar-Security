@@ -1,3 +1,4 @@
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
 
@@ -8,18 +9,43 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
+  String _animationName = 'animation_1';
   @override
   void initState() {
     super.initState();
+    setState(() {
+      _animationName = 'animation_1';
+    });
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushNamed(
-          context, LoginScreen.id);
+      setState(() {
+        _animationName='';
+      });
+      Navigator.pushNamed(context, LoginScreen.id);
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(fit: StackFit.expand, children: <Widget>[Container()]));
+      backgroundColor: Colors.black,
+      body: Stack(
+        children: <Widget>[
+          Container(
+            child: Center(child: Image.asset('assets/logo.png')),
+            padding: EdgeInsets.only(left: 20.0, right: 20.0),
+          ),
+          Opacity(
+            opacity: 0.25,
+            child: Container(
+              child: FlareActor(
+                'assets/circle.flr',
+                alignment: Alignment.center,
+                animation: _animationName,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
