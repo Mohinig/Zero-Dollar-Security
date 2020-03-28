@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'griddashboard.dart';
 class DashboardScreen extends StatefulWidget {
   static String id = 'DashboardScreen';
   @override
@@ -23,12 +24,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Hi Rahul,")
+                    Text("Zero Dollar Security"),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                        "Home")
                   ],
                 )
               ],
             ),
-          )
+
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          GridDashboard()
         ],
       ),
     );

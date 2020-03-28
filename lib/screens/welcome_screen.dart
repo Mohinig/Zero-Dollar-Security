@@ -1,6 +1,6 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'loginScreen/login_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static String id = 'WelcomeScreen';
@@ -16,7 +16,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     setState(() {
       _animationName = 'animation_1';
     });
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 2), () {
       setState(() {
         _animationName='';
       });

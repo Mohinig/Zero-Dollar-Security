@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zerodollarsecurity/screens/dashboard_screen.dart';
-import 'package:zerodollarsecurity/screens/login_screen.dart';
+import 'package:zerodollarsecurity/screens/dashboardScreen/dashboard_screen.dart';
+import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
 import 'package:zerodollarsecurity/screens/signup_screen.dart';
 import 'package:zerodollarsecurity/screens/welcome_screen.dart';
 
