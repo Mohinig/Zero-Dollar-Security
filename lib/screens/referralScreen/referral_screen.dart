@@ -33,7 +33,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                   'MEMBER VERIFICATION',
                   style: kTextStyle.copyWith(
                       fontWeight: FontWeight.bold,
-                      fontSize: 15.0,
+                      fontSize: 18.0,
                       color: Colors.black54),
                   textAlign: TextAlign.center,
                 ),
