@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zerodollarsecurity/constants.dart';
 class OrText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,11 +11,9 @@ class OrText extends StatelessWidget {
       alignment: Alignment.center,
       child: Text(
         '-OR-',
-        style: TextStyle(
-            fontFamily: 'OpenSans',
-            color: Colors.blue[700],
-            fontSize: 15.0
-        ),
+        style: kTextStyle.copyWith(
+          fontSize: 15.0,
+        )
       ),
     );
   }

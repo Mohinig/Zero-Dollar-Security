@@ -2,38 +2,33 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class GridDashboard extends StatelessWidget {
-  Items item1 = new Items(title: "Id ", subtitle: "", img: "assets/id.png");
+  Items item1 = new Items(title: "Id generator ", img: "assets/id.png");
 
   Items item2 = new Items(
     title: "About Us",
-    subtitle: "",
     img: "assets/about.png",
   );
   Items item3 = new Items(
     title: "Notifications",
-    subtitle: "",
     img: "assets/notify.png",
   );
   Items item4 = new Items(
-    title: "Developer's info",
-    subtitle: "",
+    title: "Member's info",
     img: "assets/developer.png",
   );
   Items item5 = new Items(
-    title: "QR Codr",
-    subtitle: "",
+    title: "QR Code",
     img: "assets/scan.png",
   );
   Items item6 = new Items(
     title: "Settings",
-    subtitle: "",
     img: "assets/settings.png",
   );
 
   @override
   Widget build(BuildContext context) {
     List<Items> myList = [item1, item2, item3, item4, item5, item6];
-    var color = 0xff403d3d;
+    var color = 0xff1976d2;
     return Flexible(
       child: GridView.count(
           childAspectRatio: 1.0,
@@ -50,7 +45,7 @@ class GridDashboard extends StatelessWidget {
                 children: <Widget>[
                   Image.asset(
                     data.img,
-                    width: 42,
+                    width: 50,
                   ),
                   SizedBox(
                     height: 14,
@@ -62,18 +57,7 @@ class GridDashboard extends StatelessWidget {
                             color: Colors.white,
                             fontSize: 16,
                             fontWeight: FontWeight.w600)),
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Text(
-                    data.subtitle,
-                    style: GoogleFonts.openSans(
-                        textStyle: TextStyle(
-                            color: Colors.white38,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w600)),
-                  ),
+                  )
                 ],
               ),
             );
@@ -84,7 +68,6 @@ class GridDashboard extends StatelessWidget {
 
 class Items {
   String title;
-  String subtitle;
   String img;
-  Items({this.title, this.subtitle, this.img});
+  Items({this.title, this.img});
 }

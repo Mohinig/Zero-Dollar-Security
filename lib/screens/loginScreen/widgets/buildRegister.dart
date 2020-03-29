@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import '../../signup_screen.dart';
+import 'package:zerodollarsecurity/constants.dart';
+import '../../signupScreen/signup_screen.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -23,18 +24,13 @@ class _RegisterState extends State<Register> {
               children: [
                 TextSpan(
                   text: 'Don\'t have an Account?',
-                  style: TextStyle(
-                    fontFamily: 'OpenSans',
-                    color: Colors.blue[700],
-                  ),
+                  style: kTextStyle,
                 ),
                 TextSpan(
                   text: 'Register.',
-                  style: TextStyle(
-                    fontFamily: 'OpenSans',
-                      color: Colors.blue[700],
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: kTextStyle.copyWith(
+                    fontWeight: FontWeight.bold
+                  )
                 ),
               ],
             ),

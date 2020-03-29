@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zerodollarsecurity/constants.dart';
 
 class ForgetText extends StatefulWidget {
   @override
@@ -17,10 +18,7 @@ class _ForgetTextState extends State<ForgetText> {
       child: GestureDetector(
         child: Text(
           'Forgotten Password?',
-          style: TextStyle(
-            fontFamily: 'OpenSans',
-            color: Colors.blue[700],
-          ),
+          style: kTextStyle,
         ), onTap: () {
           print('Working');
       },

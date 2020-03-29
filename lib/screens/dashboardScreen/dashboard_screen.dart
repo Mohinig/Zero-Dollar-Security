@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'griddashboard.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 class DashboardScreen extends StatefulWidget {
   static String id = 'DashboardScreen';
   @override
@@ -14,27 +16,33 @@ class _DashboardScreenState extends State<DashboardScreen> {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height:110,
+            height: 50,
           ),
           Padding(
-            padding: EdgeInsets.only(left:16.0,right:16.0),
+            padding: EdgeInsets.only(left: 16.0, right: 16.0),
             child: Row(
-              mainAxisAlignment:MainAxisAlignment.spaceBetween,
-              children:<Widget>[
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text("Zero Dollar Security"),
+                    // Text('ZeroDollar Security'),
+                    Image.asset('assets/logo.png', width: 200),
                     SizedBox(
-                      height: 4,
+                      height: 5,
                     ),
                     Text(
-                        "Home")
+                      "HOME",
+                      style: GoogleFonts.openSans(
+                          textStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600)),
+                    )
                   ],
                 )
               ],
             ),
-
           ),
           SizedBox(
             height: 40,

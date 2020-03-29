@@ -28,7 +28,7 @@ class _PassInputState extends State<PassInput> {
             alignment: Alignment.centerLeft,
             height: 50.0,
             child: TextField(
-              obscureText: show ? true : false,
+              obscureText: true,
               decoration: InputDecoration(
                 prefixIcon: Icon(
                   Icons.lock,
@@ -46,12 +46,6 @@ class _PassInputState extends State<PassInput> {
                     color: Colors.blue[700],
                   ),
                 ),
-                suffixIcon: IconButton(
-                    icon: Icon(
-                      (show ? Icons.visibility_off : Icons.visibility),
-                      color: Colors.blue[700],
-                    ),
-                    onPressed: isHidden),
                 hintText: 'Password',
                 hintStyle: kTextStyle.copyWith(
                   color: Colors.grey,
@@ -62,13 +56,5 @@ class _PassInputState extends State<PassInput> {
         ],
       ),
     );
-  }
-
-  bool show = true;
-
-  void isHidden() {
-    setState(() {
-      show = !show;
-    });
   }
 }

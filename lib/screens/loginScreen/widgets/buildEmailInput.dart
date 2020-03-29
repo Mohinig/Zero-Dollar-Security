@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zerodollarsecurity/constants.dart';
 
 class EmailInput extends StatefulWidget {
   @override
@@ -10,22 +11,21 @@ class _EmailInputState extends State<EmailInput> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric( horizontal: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('Email',
-          style: TextStyle(
-            color: Colors.blue[700],
-            fontFamily: 'OpenSans',
-          ),),
+          Text(
+            'Email',
+            style: kTextStyle,
+          ),
           SizedBox(
             height: 5.0,
           ),
           Container(
             alignment: Alignment.centerLeft,
             height: 50.0,
-            child:  TextField(
+            child: TextField(
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 prefixIcon: Icon(
@@ -34,9 +34,7 @@ class _EmailInputState extends State<EmailInput> {
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                  borderSide: BorderSide(
-                      color: Colors.blue[700]
-                  ),
+                  borderSide: BorderSide(color: Colors.blue[700]),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(30.0)),
@@ -45,6 +43,9 @@ class _EmailInputState extends State<EmailInput> {
                   ),
                 ),
                 hintText: 'you@example.com',
+                hintStyle: kTextStyle.copyWith(
+                  color: Colors.grey,
+                ),
               ),
             ),
           ),

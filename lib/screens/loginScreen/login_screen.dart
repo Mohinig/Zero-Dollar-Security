@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:zerodollarsecurity/constants.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildEmailInput.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildForgetText.dart';
+import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildHeadBack.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildHeading.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildOrText.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildPassInput.dart';
@@ -22,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
       backgroundColor: Colors.black,
       body: Stack(
         children: <Widget>[
+          HeadBack(),
           ListView(
             children: <Widget>[
               Heading(),
@@ -33,11 +36,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 //color:Colors.blue ,
                 child: Text(
                   'LOGIN',
-                  style: TextStyle(
-                    fontFamily: 'OpenSans',
-                    color: Colors.blue[700],
-                    fontSize: 20.0,
+                  style: kTextStyle.copyWith(
                     fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                    color: Colors.black54
                   ),
                   textAlign: TextAlign.center,
                 ),

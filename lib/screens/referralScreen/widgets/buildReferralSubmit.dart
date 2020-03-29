@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
-import 'package:zerodollarsecurity/screens/referralScreen/referral_screen.dart';
+import 'package:zerodollarsecurity/screens/dashboardScreen/dashboard_screen.dart';
+import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
 
-class Submit extends StatefulWidget {
+class ReferralSubmit extends StatefulWidget {
   @override
-  _SubmitState createState() => _SubmitState();
+  _ReferralSubmitState createState() => _ReferralSubmitState();
 }
 
-class _SubmitState extends State<Submit> {
+class _ReferralSubmitState extends State<ReferralSubmit> {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
       child: RaisedButton(
         child: Text(
-          'Login',
+          'Submit',
           style: kTextStyle.copyWith(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -25,7 +26,7 @@ class _SubmitState extends State<Submit> {
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
         onPressed: () {
-          Navigator.pushNamed(context, ReferralScreen.id);
+          Navigator.pushNamed(context, DashboardScreen.id);
         },
       ),
     );

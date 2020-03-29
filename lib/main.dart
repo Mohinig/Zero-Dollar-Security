@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/screens/dashboardScreen/dashboard_screen.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
-import 'package:zerodollarsecurity/screens/signup_screen.dart';
+import 'package:zerodollarsecurity/screens/referralScreen/referral_screen.dart';
+import 'package:zerodollarsecurity/screens/signupScreen/signup_screen.dart';
 import 'package:zerodollarsecurity/screens/welcome_screen.dart';
 
 void main()=>runApp(MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         LoginScreen.id:(context)=>LoginScreen(),
         SignUpScreen.id:(context)=>SignUpScreen(),
         DashboardScreen.id:(context)=>DashboardScreen(),
+        ReferralScreen.id:(context)=>ReferralScreen(),
       },
       debugShowCheckedModeBanner: false,
       title:'Zero Dollar Security',
