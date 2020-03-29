@@ -30,7 +30,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 height: 40.0,
                 //color:Colors.blue ,
                 child: Text(
-                  'MEMBER VERIFICATION',
+                  'VERIFICATION',
                   style: kTextStyle.copyWith(
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
