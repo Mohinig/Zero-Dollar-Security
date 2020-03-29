@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildHeadBack.dart';
-import 'package:zerodollarsecurity/screens/loginScreen/widgets/buildHeading.dart';
+import 'package:zerodollarsecurity/cmn_src/buildHeadBack.dart';
+import 'package:zerodollarsecurity/cmn_src/buildHeading.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/widgets/buildReferralInput.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/widgets/buildReferralSubmit.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/widgets/infoText.dart';

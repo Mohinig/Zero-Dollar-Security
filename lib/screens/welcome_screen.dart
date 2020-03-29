@@ -16,7 +16,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     setState(() {
       _animationName = 'animation_1';
     });
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 4), () {
       setState(() {
         _animationName='';
       });

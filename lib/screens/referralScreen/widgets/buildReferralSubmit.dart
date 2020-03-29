@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
-import 'package:zerodollarsecurity/screens/dashboardScreen/dashboard_screen.dart';
-import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
+import 'package:zerodollarsecurity/screens/homeScreen/home_screen.dart';
 
 class ReferralSubmit extends StatefulWidget {
   @override
@@ -26,7 +25,7 @@ class _ReferralSubmitState extends State<ReferralSubmit> {
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
         onPressed: () {
-          Navigator.pushNamed(context, DashboardScreen.id);
+          Navigator.pushNamed(context, HomeScreen.id);
         },
       ),
     );
