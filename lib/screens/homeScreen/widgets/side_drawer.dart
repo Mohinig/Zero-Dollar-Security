@@ -27,7 +27,7 @@ class _SideDrawerState extends State<SideDrawer> {
             ),),
             currentAccountPicture: GestureDetector(
               child: CircleAvatar(
-                radius: 50.0,
+                radius: 40.0,
               ),
             ),
           ),
