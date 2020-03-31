@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
 
+import '../home_screen.dart';
+
 class SideDrawer extends StatefulWidget {
   @override
   _SideDrawerState createState() => _SideDrawerState();
@@ -28,11 +30,14 @@ class _SideDrawerState extends State<SideDrawer> {
             currentAccountPicture: GestureDetector(
               child: CircleAvatar(
                 radius: 50.0,
+                backgroundImage: AssetImage('assets/profile.jpeg'),
               ),
             ),
           ),
           InkWell(
-            onTap: (){},
+            onTap: (){
+                Navigator.pushNamed(context, HomeScreen.id);
+            },
             child:ListTile(
                 leading:Icon(Icons.home,
                     color: Colors.blue),
