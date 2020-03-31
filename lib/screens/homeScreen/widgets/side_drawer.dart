@@ -39,9 +39,9 @@ class _SideDrawerState extends State<SideDrawer> {
                 Navigator.pushNamed(context, HomeScreen.id);
             },
             child:ListTile(
-                leading:Icon(Icons.home,
+                leading:Icon(Icons.person,
                     color: Colors.blue),
-                title:Text('Homepage',
+                title:Text('Profile',
                 style: kTextStyle.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.bold
@@ -51,13 +51,13 @@ class _SideDrawerState extends State<SideDrawer> {
           InkWell(
             onTap: (){},
             child:ListTile(
-              leading:Icon(Icons.person,
+              leading:Icon(Icons.phone,
                   color: Colors.blue),
-              title:Text('My Account',
-              style: kTextStyle.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold
-              ),),
+              title:Text('Contact Us',
+                style: kTextStyle.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                ),),
             ),
           ),
           InkWell(
@@ -66,6 +66,18 @@ class _SideDrawerState extends State<SideDrawer> {
               leading:Icon(Icons.info_outline,
                   color: Colors.blue),
               title:Text('About Us',
+                style: kTextStyle.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                ),),
+            ),
+          ),
+          InkWell(
+            onTap: (){},
+            child:ListTile(
+              leading:Icon(Icons.settings,
+                  color: Colors.blue),
+              title:Text('Settings',
               style: kTextStyle.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold
